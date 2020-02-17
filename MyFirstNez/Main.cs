@@ -25,16 +25,8 @@ namespace MyFirstNez
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
             base.Initialize();
-
-            var scene = new Scene();
-
-            var brick = scene.Content.Load<Texture2D>("Textures/Bricks");
-            var entity = scene.CreateEntity("floor");
-            entity.AddComponent<SpriteRenderer>(new SpriteRenderer(brick));
-
-            Core.Scene = scene;
+            Scene = new BasicScene();
         }
     }
 }
