@@ -44,6 +44,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="BasicScene.cs" />
+    <Compile Include="CameraBounds.cs" />
     <Compile Include="Forest.cs" />
     <Compile Include="Main.cs" />
     <Compile Include="Player.cs" />

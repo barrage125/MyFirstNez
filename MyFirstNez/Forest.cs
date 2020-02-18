@@ -29,13 +29,13 @@ namespace MyFirstNez
                 Entity.Scene.Content.Load<Texture2D>("Textures/Forest/Layer_0010_1")
             };
             Entity.SetScale(new Microsoft.Xna.Framework.Vector2(((float)Screen.Width) / 928, ((float)Screen.Height) / 793));
-            for (int i = 0; i <= 10; i++)
+            for (int i = 0; i < textures.Length; i++)
             {
                 var sprite = new SpriteRenderer(textures[i]);
-                sprite.SetRenderLayer(-11 + i);
+                sprite.SetRenderLayer(-textures.Length + i);
                 Entity.AddComponent<SpriteRenderer>(sprite);
             }
-            Entity.AddComponent(new BoxCollider(-Screen.Width/2,Screen.Height/2-28, Screen.Width, 65));
+            Entity.AddComponent(new BoxCollider(-Screen.Width / 2, Screen.Height / 2 - 28, Screen.Width, 65));
         }
     }
 }

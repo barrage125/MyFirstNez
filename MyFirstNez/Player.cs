@@ -168,6 +168,8 @@ namespace MyFirstNez
                 else
                     _animator.UnPause();
 
+                if (_crouchInput)
+                    moveDir *= 3;
                 var movement = moveDir * _moveSpeed * Time.DeltaTime;
 
                 _mover.CalculateMovement(ref movement, out var res);
