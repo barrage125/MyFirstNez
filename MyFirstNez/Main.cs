@@ -24,9 +24,10 @@ namespace MyFirstNez
         /// </summary>
         protected override void Initialize()
         {
+            Core.DebugRenderEnabled = true;
             // TODO: Add your initialization logic here
             base.Initialize();
-            Scene = new BasicScene();
+            Scene = new GridScene();
         }
     }
 }

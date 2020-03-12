@@ -43,11 +43,19 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="BasicScene.cs" />
+    <Compile Include="BulletDodging\BasicMovementComponent.cs" />
+    <Compile Include="BulletDodging\BulletScene.cs" />
+    <Compile Include="BulletDodging\BulletSpawnerSystem.cs" />
+    <Compile Include="BulletDodging\BulletSpawnerComponent.cs" />
+    <Compile Include="BulletDodging\BulletColliderSystem.cs" />
+    <Compile Include="DinoPlatformer\BasicScene.cs" />
     <Compile Include="CameraBounds.cs" />
-    <Compile Include="Forest.cs" />
+    <Compile Include="DinoPlatformer\Forest.cs" />
+    <Compile Include="GridMap\Grid.cs" />
+    <Compile Include="GridMap\GridScene.cs" />
+    <Compile Include="GridMap\Tile.cs" />
     <Compile Include="Main.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="DinoPlatformer\Player.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

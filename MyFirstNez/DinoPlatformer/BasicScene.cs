@@ -31,7 +31,10 @@ namespace MyFirstNez
             mapEntity3.AddComponent(new Forest());
 
             var playerEntity = this.CreateEntity("player", new Vector2(Screen.Width / 2, Screen.Height / 2));
+            var rigidBody = new ArcadeRigidbody();
             playerEntity.AddComponent(new Player());
+            playerEntity.AddComponent(rigidBody);
+            rigidBody.SetMass(1000);
             var collider = playerEntity.AddComponent(new CircleCollider(9.0f));
 
             var topLeft = new Vector2(-50000f,-100f);
